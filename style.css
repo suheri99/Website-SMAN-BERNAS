@@ -1,0 +1,43 @@
+/* Add CSS styles for mobile responsiveness */
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+      color: #333; /* Default text color */
+      font-family: 'Arial', sans-serif; /* Choose an appropriate font */
+    }
+  
+    h1 {
+      font-size: 24px;
+      color: #0066cc; /* Blue color */
+      text-transform: uppercase; /* Uppercase the text */
+    }
+  
+    a {
+      font-size: 16px;
+      color: #990000; /* Dark red color */
+      text-decoration: none; /* Remove underline from links */
+      font-weight: bold; /* Bold font for links */
+    }
+  
+    a:hover {
+      color: #cc0000; /* Red color on hover */
+    }
+  
+    /* Add animation for the logo */
+    .logo img {
+      animation: moveLogo 5s linear infinite;
+    }
+  
+    @keyframes moveLogo {
+      0% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(100px); /* Adjust the distance the logo moves */
+      }
+      100% {
+        transform: translateX(0);
+      }
+    }
+  }
+  
